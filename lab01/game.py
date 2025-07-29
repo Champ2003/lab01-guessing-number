@@ -36,8 +36,8 @@ def check_guess(secret_number, player_guess):
         return "high"
     else:
         return "low"
-    import random
-    pass
+import random
+    
 
 def play_game():
     """
@@ -48,11 +48,11 @@ def play_game():
     print("I'm thinking of a number between 1 and 100.")
 
     # This part will be uncommented after the tasks are complete
-    # import random
-    # secret_number = random.randint(1, 100)
-    # attempts = 0
-    #
-     while True:
+   
+    secret_number = random.randint(1, 100)
+    attempts = 0
+
+    while True:
          attempts += 1
          guess = get_player_guess()
          result = check_guess(secret_number, guess)
